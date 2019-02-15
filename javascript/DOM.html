@@ -1,0 +1,33 @@
+<html>
+	<style>
+	</style>
+	<body>
+		<input type="text" id="d1">
+		<button onclick="add()">Try it</button>
+		<ul id="d4">
+		
+		</ul>
+		<script>
+			function add(){
+				 var newLi = document.createElement("li");
+				 var task = document.getElementById("d1").value;
+				  var t = document.createTextNode(task);
+				  
+				  var doneBtn = document.createElement("button");
+				  var doneTxt = document.createTextNode("DONE");
+				  doneBtn.appendChild(doneTxt);
+				  
+				  var delBtn = document.createElement("button");
+				  var delTxt = document.createTextNode("Delete Task");
+				  delBtn.appendChild(delTxt)
+				  
+				  newLi.appendChild(t);
+				  newLi.appendChild(doneBtn);
+				  newLi.appendChild(delBtn);
+				  var mylist=document.getElementById("d4");
+				  mylist.appendChild(newLi);
+			}	
+				
+		</script>
+	</body>
+</html>
