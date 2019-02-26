@@ -1,0 +1,38 @@
+<html>
+	<body>
+		<button onclick="abc()">ABC click me</button>
+		<button onclick="xyz()">XYZ click me</button>	
+		<div id="d1"></div>
+		<script>
+			var ar = [10,22,35,67,12,45];
+			
+			ar.forEach(function(x,y){
+				var newEl = document.createElement("h1");
+				var textNode = document.createTextNode(x);
+				newEl.append(textNode);
+				document.getElementById('d1').append(newEl);
+			});
+			console.dir(ar);
+		
+			ar.forEach(function(x,y,z){
+				console.log("HHEEEE",x,y,z)
+			});
+			
+			var freshar = ar.map(function(x,y){
+								return x>30;
+							});
+			console.log("freshar",freshar);
+			
+			var filteredar = ar.filter(function(x,y){
+								return x>20;
+							});
+			console.log("filteredar",filteredar)
+			var filteredar = filteredar.map(function(x,y){
+								return x*5;
+							});
+			console.log("filteredar",filteredar)
+			console.log("ar",ar);
+					
+		</script>
+	</body>
+</html>
