@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<button onclick="abc()">ABC click me</button>
+		<button onclick="xyz()">XYZ click me</button>	
+		<div id="d1"></div>
+		<script>
+				
+				function add(a,b){
+					var z;
+					z=a+b;
+					console.log(z);
+				}
+				
+				setTimeout(function(){console.log("hello manumits")},4000);//asynchronous
+				console.log("Im the last line");
+				
+				add(12,34);//add function is synchronous function
+				console.log("Im the last last line");
+		</script>
+	</body>
+</html>
