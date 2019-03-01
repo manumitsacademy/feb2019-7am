@@ -1,0 +1,26 @@
+<html>
+	<style>
+		#l1,#l2{
+			display:none;
+		}
+	</style>
+	<body>
+		<div>	
+			<button id="d1" onclick="fun1()">Lesson1</button>
+			<div id='l1'>variables, decleration, definition</div><br>
+			<button id="d2" onclick="fun2()">Lesson2</button>
+			<div id='l2'>if else forloops</div>
+		</div>
+		<script>
+				
+				function fun1(){
+					var x = document.getElementById('l1');
+					x.style.display='block';
+				}
+				function fun2(){
+					var y = document.getElementById('l2');
+					y.style.display='block';
+				}
+		</script>
+	</body>
+</html>

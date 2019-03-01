@@ -1,0 +1,52 @@
+<html>
+	<script>
+		var ar = ['modi','sonia','rahul'];
+		for(let i=0;i<ar.length;i++){
+			console.log(ar[i]);
+		}
+		var employees = [{
+								'firstname':'praveen',
+								'lastname':'gubbala',
+								'dob':'04-19-1983',
+								'location':'pune',
+								'address':'wakad',
+								'mobilenumber':7875381293,
+								'contry':'India'
+							},{
+								'firstname':'srikanth',
+								'lastname':'gubbala',
+								'dob':'04-29-1987',
+								'location':'bengaluru',
+								'address':'wakad',
+								'mobilenumber':1234123412,
+								'contry':'India'
+							},{
+								'firstname':'praveen',
+								'lastname':'reddy',
+								'dob':'01-19-1984',
+								'location':'hyd',
+								'address':'asd',
+								'mobilenumber':443322,
+								'contry':'India'	
+						}];		
+		document.write(`
+		<table border="10"> 
+			<tr> 
+				<th>firstname</th>
+				<th>lastname</th> 
+				<th>dob</th> 
+				<th>location</th> 
+				<th>address</th> 
+				<th>Mobilenum</th> 
+				<th>contry</th> 
+				</tr><tr>`)
+		for(let i=0;i<employees.length;i++){
+			for(key in employees[i]){
+				document.write(`<td>${employees[i][key]}</td>`);
+			}
+			document.write(`</tr>`)
+		}
+		
+		
+	</script>
+</html>

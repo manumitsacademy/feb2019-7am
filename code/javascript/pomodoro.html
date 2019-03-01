@@ -1,0 +1,22 @@
+<html>
+	<body>	
+		<h1><span id="hr"></span>:<span id="mi"></span></h1>
+		<button onclick="start()">Start</button>
+		<script>
+			var hr=25,mn=59;
+			document.getElementById("hr").innerHTML = hr;
+			document.getElementById("mi").innerHTML = mn;
+			function start(){
+				setInterval(function(){
+					if(mn==0){
+						hr--;
+						mn=59;
+					}
+					mn--;
+					document.getElementById("mi").innerHTML = mn;
+					document.getElementById("hr").innerHTML = hr;
+				},100);
+			}
+		</script>
+	</body>
+</html>

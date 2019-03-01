@@ -1,0 +1,33 @@
+<html>
+	<body>
+		<h1>Hello Server</h1>
+		<div id="d1"></div>
+		<button onclick="showdata()">Show some data</button>
+		<script>
+			function showdata(){
+				var http = new XMLHttpRequest();
+				http.open("GET","https://restcountries.eu/rest/v2/all");
+				http.send();
+				http.onreadystatechange = function(){
+					if(http.readyState==4){
+						var data = JSON.parse(http.responseText);
+						console.log(data)
+						for(let i=0;i<data.length;i++){
+							var img = document.createElement('img');
+							var srcattr = document.createAttribute('src');
+							var widthattr = document.createAttribute('width');
+							widthattr.value = '100';
+							var heightattr = document.createAttribute('height');
+							heightattr.value = '100';
+							srcattr.value=data[i].flag;
+							img.setAttributeNode(srcattr);
+							img.setAttributeNode(widthattr);
+							img.setAttributeNode(heightattr);
+							document.getElementById("d1").appendChild(img);
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

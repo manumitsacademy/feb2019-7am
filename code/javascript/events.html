@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<div style="height:400px;width:500px;background-color:lightgreen" 
+		onmousemove="abc(event)"><!-- event binding(event handling) -->
+		<h1 id="d1"></h1>
+		</div>
+		<script>
+			function abc(e){
+				console.dir(e.offsetX,e.offsetY);
+				document.getElementById("d1").innerHTML= "X:"+e.offsetX+" Y:"+e.offsetY;
+				//data binding
+			}
+		</script>
+	</body>
+</html>
+
+<!-- 
+	
+-->

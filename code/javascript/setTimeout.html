@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<button onclick="abc()">ABC click me</button>	
+		<div id="d1"></div>
+		<script>
+				
+			
+				var x = setTimeout(function(){console.log("hello manumits")},8000);
+				
+				
+				var y = setInterval(function(){console.log("Im setInterval")},2000);
+				console.log("Im last line")
+				
+				function abc(){
+					clearInterval(y);
+				}
+		</script>
+	</body>
+</html>

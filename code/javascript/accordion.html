@@ -1,0 +1,38 @@
+<html>
+	<style>
+		p{
+			display:none;
+		}
+	</style>
+	<body>
+		<div>
+			<div>
+				<h1 onclick="abc(event,this)">Lesson 1</h1>
+				<p>one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one one </p>
+			</div>
+			<div>
+				<h1 onclick="abc(event,this)">Lesson 2</h1>
+				<p>two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two </p>
+			</div>
+			<div>
+				<h1 onclick="abc(event,this)">Lesson 3</h1>
+				<p>three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three three </p>
+			</div>
+		</div>
+		<script>
+			var x=true;
+			function abc(e,t){
+				console.dir(e);
+				console.dir(t);
+				if(x==true){
+					e.target.nextElementSibling.style.display="block";
+					x=false;
+				}
+				else{
+					e.target.nextElementSibling.style.display="none";
+					x=true;
+				}
+			}
+		</script>
+	</body>
+</html>

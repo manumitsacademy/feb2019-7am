@@ -1,0 +1,33 @@
+<html>
+	<body>		
+		<script>
+			
+			function A(){				
+				var x=100;
+				this.abc=function(){
+					x=x-90;
+					console.log(x);
+				}
+			}//constructor function
+			
+			function B(){
+				var x=400;
+				this.xyz=function(){
+					x=x+90;
+					console.log(x);
+				}
+			}
+			
+			
+			var ob1 = new A();
+			ob1.abc();
+			
+			var ob2 = new B();
+			
+			ob1.abc();
+			ob1.abc();
+			ob2.xyz();
+			
+		</script>
+	</body>
+</html>

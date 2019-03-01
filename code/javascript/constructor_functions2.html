@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<script>
+			function Student(){
+				var x=100;//variable or private variable
+				this.y=200;//property
+				
+				var getStudentName=function(){
+					return "praveen gubbala";
+				}//private function
+				
+				this.getFullName = function(){
+					return "Srikanth G"
+				}//methods
+			}
+			Student.prototype.getAge = function(){
+				return 33;
+			}
+			Student.prototype.a=1;
+			var s1 = new Student();
+			s1.__proto__.a++;
+			console.dir(s1.a);
+		
+			var s2 = new Student();
+			console.log(s2.a);
+			
+		</script>
+	</body>
+</html>

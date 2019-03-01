@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<button onclick="abc()">ABC click me</button>
+		<button onclick="xyz()">XYZ click me</button>
+		<script>
+			function abc(){
+				alert("HELLO Manu")
+			}
+			
+			var xyz = function(){
+				alert("Function Literals")
+			};
+			
+			(function(){
+				alert("Im Anonymous Function")
+			})();//IIFE
+		</script>
+	</body>
+</html>
