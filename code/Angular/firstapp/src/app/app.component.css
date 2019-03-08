@@ -1,0 +1,16 @@
+#d1{
+    border:1px solid;
+    background-color: rgb(169, 228, 130);
+    margin:10px;
+    padding:10px;
+}
+
+.blueback{
+    background-color: lightseagreen;
+}
+.greyback{
+    background-color: lightslategray;
+}
+.pinkback{
+    background-color: lightpink;
+}
