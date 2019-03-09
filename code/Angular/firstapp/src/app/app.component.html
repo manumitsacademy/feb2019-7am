@@ -1,26 +1,5 @@
-<h1>This is My App</h1>
-<div id="d1">
-    <input type="text" #task><button (click)="addTask(task.value)">Add Task</button>
-    <div *ngIf="tasks.length">
-        <table border="2">
-            <tr *ngFor="let task of tasks;let i = index;let e = even;" [class]="e?'blueback':'greyback'">
-                <td [class]="'pinkback'">{{i+1}}</td>
-                <td>{{task}}</td>
-                <td>{{e}}</td>
-            </tr>
-        </table>
-    </div>
-    <ul>
-            <li *ngFor="let t of tasks;let i = index">{{i}}-{{t}}</li>
-        </ul>
-    <hr>
-    <input type="text" placeholder="Enter First Number" #fn (keyup)='0'> &nbsp;
-    <input type="text" placeholder="Enter Second Number" #sn (keyup)='0'> &nbsp;
-    <button (click)="add(fn.value,sn.value)" [disabled]="fn.value=='' || sn.value==''">Add </button> 
-    <!--
-    <div *ngIf="fn.value!='' && sn.value!=''">
-        
-    </div>   
-    -->
+<div>
+    <app-header></app-header>
+    <app-mainarea></app-mainarea>
+    <app-footer></app-footer>
 </div>
-
